@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body class="bg-black">
+    <div class="max-w-[1152px] mx-auto bg-white">
+
+      <!-- Desktop เมนู -->
+      <div class="hidden justify-end font-medium text-xl pt-[27px] pr-[60px] mb-[106px] md:flex">
+        <a href="works.html">Works</a>
+        <a href="blog.html" class="ml-[26px]">Blog</a>
+        <a href="#" class="ml-[33px]">Contact</a>
+      </div>
+
+      <!-- Mobile เมนู -->
+      <div class="flex justify-end pt-[20px] pr-[18px] mb-[55.63px] md:hidden">
+        <button class="text-4xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- ส่วนบน (Hero) -->
+      <div class="flex flex-col items-center px-5 mx-auto md:flex-row md:justify-between md:px-[148px]">
+
+        <!-- รูปโปร Mobile -->
+        <div class="relative w-[243px] h-[243px] mb-[34px] shrink-0 md:hidden">
+          <div class="absolute right-1 top-3 w-[243px] h-[243px] rounded-full bg-slate-200 z-0"></div>
+          <img
+            src="https://picsum.photos/200"
+            alt="myPic"
+            class="relative z-10 size-[243px] rounded-full object-cover"
+          />
+        </div>
+
+        <!-- ข้อความ -->
+        <div class="flex flex-col items-center md:items-start">
+          <h1 class="text-[32px] md:text-[44px] md:leading-[60px] text-center md:text-start font-bold w-[250px] md:w-full max-w-[506px] mb-[21px] md:mb-10">
+            Hi, I am John,<br />Creative Technologist
+          </h1>
+          <p class="text-base text-center md:text-start w-full max-w-[497px] mb-[27px] md:mb-[38px]">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="bg-[#FF6464] w-[208px] h-[47px] rounded-sm font-medium text-xl text-white mb-[58px] md:mb-[71px]">
+            Download Resume
+          </button>
+        </div>
+
+        <!-- รูปโปร Desktop -->
+        <div class="relative w-[243px] h-[243px] shrink-0 hidden md:block">
+          <div class="absolute right-1 top-3 w-[243px] h-[243px] rounded-full bg-slate-200 z-0"></div>
+          <img
+            src="https://picsum.photos/200"
+            alt="myPic"
+            class="relative z-10 size-[243px] rounded-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- ส่วนกลาง Recent Posts -->
+      <div class="bg-slate-200 w-full px-5 py-4 md:px-[148px] md:min-h-[396px]">
+        <div class="flex justify-center md:justify-between items-center h-[60px] pt-[7px] mb-4">
+          <h2 class="text-[18px] md:text-[22px]">Recent posts</h2>
+          <p class="text-[#00A8CC] text-base hidden md:block">View all</p>
+        </div>
+
+        <!-- Recent post cards -->
+        <div class="flex flex-col gap-5 md:flex-row md:justify-between">
+          <!-- card 1 -->
+          <div class="bg-white w-full md:max-w-[418px] rounded shadow-md pl-[19px] pr-[18px] md:px-[23px] pt-[12px] md:pt-[24px] pb-[22px] md:pb-6">
+            <h2 class="font-bold text-[22px] md:text-[26px] mb-[13px] md:mb-[17px]">
+              Making a design system from scratch
+            </h2>
+            <div class="flex items-center md:text-lg mb-[19px] md:mb-[11px]">
+              <p>12 Feb 2020</p>
+              <div class="w-px h-[21px] bg-black mx-[26px]"></div>
+              <p>Design, Pattern</p>
+            </div>
+            <p class="mb-[7px]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+          <div class="bg-white w-full md:max-w-[418px] rounded shadow-md pl-[19px] pr-[18px] md:px-[23px] pt-[12px] md:pt-[24px] pb-[22px] md:pb-6">
+            <h2 class="font-bold text-[22px] md:text-[26px] mb-[13px] md:mb-[17px]">
+              Creating pixel perfect icons in Figma
+            </h2>
+            <div class="flex items-center md:text-lg mb-[19px] md:mb-[11px]">
+              <p>12 Feb 2020</p>
+              <div class="w-px h-[21px] bg-black mx-[26px]"></div>
+              <p class="block md:hidden">Design, Pattern</p>
+              <p class="hidden md:block">Figma, Icon Design</p>
+            </div>
+            <p class="mb-[7px]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ส่วนล่าง Featured Works -->
+      <div class="flex flex-col px-5 w-full md:px-[148px]">
+        <h2 class="text-center md:text-start text-[22px] h-[40px] pl-[2px] pt-[15px] mb-[22px]">
+          Featured works
+        </h2>
+
+        <!-- Featured card 1 -->
+        <div class="flex flex-col items-center md:flex-row gap-[18px] border-b border-gray-300 pb-[15px] mb-[15px]">
+          <img
+            src="https://picsum.photos/seed/dash/264/180"
+            alt="featuredImg"
+            class="w-full max-w-[339px] max-h-[230px] md:w-[264px] md:h-[180px] rounded-md object-cover shrink-0"
+          />
+          <div>
+            <h2 class="font-bold text-[30px] h-[44px] mb-4">Designing Dashboards</h2>
+            <div class="flex items-center gap-[26px] mb-[22px]">
+              <p class="font-black text-lg text-center text-white bg-[#142850] rounded-2xl w-[62px] h-[25px] leading-[25px]">
+                2020
+              </p>
+              <p class="text-[#8695A4] text-xl">Dashboard</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+
+        <!-- Featured card 2 -->
+        <div class="hidden md:flex flex-col items-center md:flex-row gap-[18px] border-b border-gray-300 pb-[15px] mb-[15px]">
+          <img
+            src="https://picsum.photos/seed/portrait/264/180"
+            alt="featuredImg"
+            class="w-full max-w-[339px] max-h-[230px] md:w-[264px] md:h-[180px] rounded-md object-cover shrink-0"
+          />
+          <div>
+            <h2 class="font-bold text-[30px] h-[44px] mb-4">Vibrant Portraits of 2020</h2>
+            <div class="flex items-center gap-[26px] mb-[22px]">
+              <p class="font-black text-lg text-center text-white bg-[#142850] rounded-2xl w-[62px] h-[25px] leading-[25px]">
+                2018
+              </p>
+              <p class="text-[#8695A4] text-xl">Illustration</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+
+        <!-- Featured card 3 -->
+        <div class="hidden md:flex flex-col items-center md:flex-row gap-[18px] border-b border-gray-300 pb-[15px]">
+          <img
+            src="https://picsum.photos/seed/type/264/180"
+            alt="featuredImg"
+            class="w-full max-w-[339px] max-h-[230px] md:w-[264px] md:h-[180px] rounded-md object-cover shrink-0"
+          />
+          <div>
+            <h2 class="font-bold text-[30px] h-[44px] mb-4">36 Days of Malayalam type</h2>
+            <div class="flex items-center gap-[26px] mb-[22px]">
+              <p class="font-black text-lg text-center text-white bg-[#142850] rounded-2xl w-[62px] h-[25px] leading-[25px]">
+                2018
+              </p>
+              <p class="text-[#8695A4] text-xl">Typography</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="flex flex-col items-center text-[#21243D] h-[182px] text-[30px] gap-[26px] pt-[51px] mt-[83px]">
+        <div class="flex flex-row mb-[26px] gap-[35px]">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-linkedin"></i>
+        </div>
+        <p class="text-sm">Copyright &#xA9;2020 All rights reserved</p>
+      </div>
+
+    </div>
+  </body>
+</html>
